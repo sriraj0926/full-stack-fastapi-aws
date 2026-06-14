@@ -13,6 +13,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Debug secrets
+        run: |
+          echo "Region: '${{ secrets.AWS_REGION }}'"
+          echo "Account: '${{ secrets.AWS_ACCOUNT_ID }}'"
+
 
       # Configure AWS
       - name: Configure AWS credentials
