@@ -1,4 +1,4 @@
-name: Office Server Self-Hosted CI/CD
+name: Dummy_Runner_Trial_1
 
 on:
   push:
